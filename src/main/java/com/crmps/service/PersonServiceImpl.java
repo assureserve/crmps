@@ -13,6 +13,8 @@ import com.crmps.domain.Person;
 import com.crmps.domain.dao.AddressDao;
 import com.crmps.domain.dao.PersonDao;
 
+import java.util.List;
+
 @Component
 @Transactional
 public class PersonServiceImpl implements PersonService {
@@ -36,5 +38,10 @@ public class PersonServiceImpl implements PersonService {
 	public void saveAddress(Address address) {
 		
 		addressDao.save(address);
+	}
+
+	@Override
+	public List<Person> findAllUsers() {
+		return personDao.findAll();
 	}
 }
