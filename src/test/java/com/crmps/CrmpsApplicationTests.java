@@ -14,8 +14,7 @@ import com.crmps.service.PersonService;
 
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
-
+//@SpringBootTest
 
 public class CrmpsApplicationTests {
 
@@ -59,7 +58,7 @@ public class CrmpsApplicationTests {
 		
 	}
 	
-	@Test 
+	//@Test 
 	public void testAddressForPerson()
 	{
 		Person person = new Person ();
