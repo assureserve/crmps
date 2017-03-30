@@ -34,7 +34,7 @@ public class CrmpsApplicationTests {
 	public void testSavePerson()
 	{
 		Person person = new Person ();
-		person.setUserId("Test");
+		person.setEmail("Test");
 		person.setPassword("Test");
 		person.setFirstName("Test");
 		person.setLastName("Test");
@@ -63,7 +63,7 @@ public class CrmpsApplicationTests {
 	public void testAddressForPerson()
 	{
 		Person person = new Person ();
-		person.setUserId("Test");
+		person.setEmail("Test");
 		person.setPassword("Test");
 		person.setFirstName("Test");
 		person.setLastName("Test");

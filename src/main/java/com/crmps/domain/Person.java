@@ -22,8 +22,8 @@ public class Person extends AbstractBaseEntity {
 
 	private static final long serialVersionUID = 1L;
 
-	@Column(name = "user_id")
-	private String userId;
+	@Column(name = "email")
+	private String email;
 
 	@Column(name = "password")
 	private String password;
@@ -76,12 +76,12 @@ public class Person extends AbstractBaseEntity {
 		this.pictureURL = pictureURL;
 	}
 
-	public String getUserId() {
-		return userId;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getPassword() {
@@ -108,4 +108,16 @@ public class Person extends AbstractBaseEntity {
 		LastName = lastName;
 	}
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", LastName='" + LastName + '\'' +
+                ", govermentId='" + govermentId + '\'' +
+                ", pictureURL='" + pictureURL + '\'' +
+                ", addressList=" + addressList +
+                '}';
+    }
 }
